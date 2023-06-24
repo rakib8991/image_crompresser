@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="compress-section">
+      <div class="compress-bar">
+        <p class="compression-title">Compression Level</p>
+        <div class="level-bar-wrapper">
+          <div class="bar-wrapper">
+            <input
+              type="range"
+              id="compressSlider"
+              min="0"
+              max="100"
+              value="80"
+              class="compress-slider"
+            />
+          </div>
+          <div class="bar-value">
+            <p id="compressValue">100</p>
+            <span>%</span>
+          </div>
+        </div>
+      </div>
+      <div class="compress-bur-button">
+        <button id="compressButton">Compress</button>
+        <button id="deleteButton">Delete All</button>
+      </div>
+    </div>
+
+    <div class="drop-zone" id="dropZone">
+      <div class="drop-zone-inner" id="dropZone-inner">
+        <div class="image-container-wrapper">
+          <!-- Image containers will be dynamically added here -->
+        </div>
+        <p class="start-bio-lebel">
+          Drop JPEG images here to start compression
+        </p>
+
+        <input type="file" id="fileInput" hidden />
+        <label for="fileInput" class="label-upload">Select JPEG Files</label>
+      </div>
+      <button type="button" id="Select-Image22" class="Select-Image2">
+        Select Image
+      </button>
+
+      <div class="fooott">
+        <a href="." id="remove-image" class="remove-img"> </a>
+        <div class="download-section">
+          <a id="downloadLink" download>Download ZIP</a>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.6.0/jszip.min.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

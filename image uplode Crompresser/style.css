@@ -1,0 +1,398 @@
+.drop-zone {
+  min-height: 180px;
+  border: 1px solid #ced4da;
+  background: #fff;
+  text-align: center;
+  margin: 28px 0;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+div#dropZone-inner {
+  border: 2px solid #d2d2d2;
+  border-style: dashed;
+  background: #f5f5f5;
+  min-height: 355px;
+  height: auto;
+  padding-top: 10px;
+  position: relative;
+}
+@media only screen and (max-width: 600px) {
+  div#dropZone-inner {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .image-container-wrapper {
+    flex-direction: column;
+  }
+  .add-image-button {
+    margin-bottom: 20px;
+  }
+}
+.drop-zone-inner p {
+  display: block !important;
+  text-align: center;
+}
+.start-bio-lebel {
+  position: sticky;
+  top: 126px;
+}
+
+.label-upload {
+  background-color: indigo;
+  color: white;
+  padding: 0.5rem;
+  font-family: sans-serif;
+  border-radius: 0.3rem;
+  cursor: pointer;
+  margin-top: 1rem;
+  position: sticky;
+  top: 161px;
+}
+
+.drop-zone.highlight {
+  background-color: #f7f7f7;
+}
+
+.upload-preview {
+  max-width: 100%;
+  max-height: 100%;
+  margin-top: 40px;
+}
+
+input#compressSlider {
+  width: 100%;
+}
+
+.compress-section {
+  display: flex !important;
+  width: 100%;
+  align-items: center;
+}
+.compress-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-basis: 70%;
+  width: 100%;
+}
+.compression-title {
+  flex-basis: 35%;
+  font-size: 16px;
+  font-family: sans-serif;
+  text-align: right;
+}
+.bar-wrapper {
+  flex-basis: 100%;
+  margin: 20px 10px;
+  padding: 10px;
+  border: 1px solid #9191914f;
+  border-radius: 4px;
+  box-shadow: #9191914f 0 0 10px;
+}
+.bar-value {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+p#compressValue {
+  font-size: 16px;
+  font-family: sans-serif;
+  padding: 12px 10px;
+  border: 1px solid #9191914f;
+  border-radius: 4px;
+  box-shadow: #9191914f 0 0 10px;
+}
+span {
+  font-size: 16px;
+  font-family: sans-serif;
+}
+button#compressButton,
+button#deleteButton {
+  padding: 10px;
+  background: #0067b8ed;
+  border: 1px solid #919191;
+  border-radius: 4px;
+  margin: 0 5px;
+  color: #fff;
+}
+.compressed-size-label {
+  color: #0c0d0e;
+  font-family: sans-serif;
+  position: absolute;
+  bottom: 0;
+  left: -50%;
+  transform: translate(100%, -50%);
+}
+.image-file-name {
+  font-family: sans-serif;
+}
+.original-size-label {
+  color: #0c0d0e;
+  top: 10px;
+  position: absolute;
+  left: 50px;
+  /* Add other styles as desired */
+}
+a#downloadLink {
+  display: inline-block;
+  border-radius: 7px;
+  background: #0067b8;
+  color: #ffffff;
+  padding: 12px 27px;
+  margin: 10px;
+}
+.hide .label-upload {
+  display: none !important;
+}
+.hide {
+  background-color: #fff !important;
+  display: flex !important;
+}
+.hide p {
+  display: none !important;
+}
+.Select-Image2 {
+  display: none;
+}
+.remove-img {
+  display: none;
+}
+.Select-Image2.show {
+  display: block;
+}
+.remove-img.show {
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .compress-section {
+    padding-bottom: 35px;
+  }
+}
+
+/* New CSS for image containers and add image button */
+.image-container {
+  position: relative;
+  min-height: 320px;
+  width: 240px;
+  height: auto;
+  margin-right: 10px;
+  border: 1px solid #e5e5e5;
+  color: #666;
+  background: #eee;
+  padding: 10px;
+  margin: 5px;
+}
+.image-container:hover {
+  background: #fff;
+  transition: 0.4s;
+}
+.drop-zone-inner {
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+.image-container-wrapper {
+  display: flex;
+  vertical-align: top;
+  white-space: normal;
+  overflow: hidden;
+  float: left;
+  flex-wrap: wrap;
+}
+.image-container {
+  position: relative;
+
+  margin-right: 10px;
+}
+
+/* Rest of the CSS styles */
+.download-button {
+  position: absolute;
+  cursor: pointer;
+  border-radius: 7px;
+  background: #0067b8;
+  color: #ffffff;
+  padding: 6px 27px;
+  margin: 10px;
+  display: inline-block;
+  bottom: 16px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.download-button:hover {
+  opacity: 0.9;
+  color: #fff;
+}
+.add-image-button:hover {
+  background: #c7c7c7;
+}
+.add-image-button {
+  margin-top: 60px;
+  margin-left: 20px;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #eeeeee;
+  border-radius: 50%;
+  width: 135px;
+  height: 125px;
+  text-align: center;
+  line-height: 50px;
+  cursor: pointer;
+  /* left: 306px;
+  top: 88px; */
+  font-size: 30px;
+  transition: background-color 0.3s ease;
+}
+a.add-image-button i {
+  border: 2px solid #919191;
+  color: #919191;
+  background: transparent;
+  padding: 4px 6px;
+  border-radius: 50%;
+  /* transform: rotate(45deg); */
+  font-size: 12px;
+  margin-top: 40px;
+}
+.add-image-button::before {
+  content: "Add Images";
+  color: #919191;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 14px;
+  font-family: sans-serif;
+}
+
+.fooott {
+  display: flex;
+  justify-content: flex-end;
+}
+.remove-img {
+  width: 25px;
+  height: 25px;
+  background: url("https://adittaw.com/wp-content/uploads/2023/06/trash.png")
+    no-repeat center;
+  background-size: cover;
+  cursor: pointer;
+  margin: 20px;
+}
+.Select-Image2 {
+  border-radius: 7px;
+  background: #0067b8;
+  color: #ffffff;
+  padding: 16px 27px;
+  margin: 10px;
+  position: absolute;
+}
+.remove-button {
+  top: 4px;
+  position: absolute;
+  right: 7px;
+  color: #000000;
+  font-size: 16px;
+  background: #fff;
+  padding: 5px 8px;
+  border-radius: 50px;
+}
+.remove-button:hover {
+  color: #fff;
+  background: #0067b8;
+}
+@media only screen and (max-width: 600px) {
+  .drop-zone-inner.hide {
+    display: flex;
+  }
+  .image-container-wrapper {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .add-image-button {
+    margin-bottom: 20px;
+    height: auto;
+    width: auto;
+    padding: 10px;
+    background-color: #0067b8;
+    line-height: 0;
+    position: fixed;
+    bottom: 120px;
+    right: 24px;
+  }
+  a.add-image-button i {
+    margin-top: 0;
+    color: #fff;
+    font-size: 30px;
+    border: #fff;
+  }
+  .add-image-button::before {
+    display: none;
+  }
+  .remove-img.show {
+    display: block;
+    position: fixed;
+    bottom: 60px;
+    right: 10px;
+    font-size: 30px;
+    padding: 10px;
+    border-radius: 50%;
+  }
+  .download-section {
+    position: fixed;
+    bottom: 18px;
+    right: 8px;
+  }
+}
+@media only screen and (max-width: 1150px) {
+  div#dropZone-inner {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media only screen and (max-width: 815px) {
+  .compress-section {
+    flex-direction: column;
+  }
+  .compress-bar {
+    flex-direction: column;
+  }
+  .bar-wrapper {
+    flex-basis: 70%;
+    margin: 0;
+    margin-bottom: 10px;
+    width: 70%;
+  }
+  .compression-title {
+    text-align: center;
+  }
+  .compress-bur-button {
+    text-align: center;
+  }
+  p#compressValue {
+    margin-bottom: 10px;
+  }
+  .bar-value {
+    margin-top: -8px;
+    margin-left: 10px;
+  }
+}
+.level-bar-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-basis: 50%;
+  width: 100%;
+  margin: 10px 0;
+}
+p {
+  margin-bottom: 0 !important;
+}
+.entry-content p {
+  margin-bottom: 0 !important;
+}
